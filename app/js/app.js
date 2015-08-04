@@ -27,19 +27,19 @@ var app = (function(document, $) {
 
 $('#image1').on('click',function(){
 	$('.thumb-image-holder').toggleClass('no-margin');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
 
 $('#image-color').on('click',function(){
 	$('.thumb-image').toggleClass('filters');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
 
 $('#tile-width').on('click',function(){
 	$('.thumbnail').toggleClass('old-width');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
 
@@ -47,25 +47,34 @@ $('#oldpub').on('click',function(){
 	$('.old-publisher').toggleClass('hide-for-small-up');
 	$('.old-date').toggleClass('hide-for-small-up');
 	$('.thumb-meta').toggleClass('hide-for-small-up');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
 
 $('#tilebg').on('click',function(){
 	$('.thumbnail-inside').toggleClass('oldbackground');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
 
 $('#title').on('click',function(){
 	$('.thumb-title').toggleClass('old-style');
 	$('.thumb-logline').toggleClass('old-style');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
 
 $('#actions').on('click',function(){
 	$('.thumb-actions').toggleClass('hide-for-small-up');
-	$(this).toggleClass('success')
+	$(this).toggleClass('alert')
 });
 
+$('#gray').on('click',function(){
+	$('body').toggleClass('gray');
+	$(this).toggleClass('alert')
+});
+
+$('#gold').on('click',function(){
+	$('body').toggleClass('gold');
+	$(this).toggleClass('alert')
+});
