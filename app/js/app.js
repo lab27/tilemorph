@@ -22,3 +22,9 @@ var app = (function(document, $) {
 (function() {
 	app.init();
 })();
+
+
+$('#padding1').on('click',function(){
+	console.log('test')
+	$('.thumbnail-inside').addClass('no-padding')
+});

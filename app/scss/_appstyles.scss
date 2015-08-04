@@ -8,9 +8,9 @@ html, body {
     width: 100%;
     height:100%;
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:column nowrap;
     align-items:center;
-    justify-content:center;
+    justify-content:space-between;
     font-family: 'Roboto Condensed';
 }
 
@@ -22,7 +22,27 @@ body.gold {
 	background:$secondary-color;
 }
 
+#main-content {
+	flex:1 0;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items:center;
+}
 
+#footer {
+	flex:0 0 50px;
+	background:$secondary-color;
+	// padding:10px;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	font-size:12px;
+}
+
+.button {
+	margin:0;
+}
 
 #thumbnail {
     flex: 0 700px;
@@ -464,6 +484,9 @@ body.gold {
 	cursor:pointer;
 }
 
+.thumbnail-inside.no-padding {
+	padding:0;
+}
 
 .thumb-image-holder, .thumb-image {
 	width: 10vw;
