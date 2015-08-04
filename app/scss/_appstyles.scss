@@ -14,6 +14,41 @@ html, body {
     font-family: 'Roboto Condensed';
 }
 
+@font-face {
+  font-family: 'EagleLight';
+  src: url('../fonts/Eagle-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Eagle-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Eagle-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Eagle-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Eagle-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Eagle-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'EagleBook';
+  src: url('../fonts/Eagle-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Eagle-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Eagle-Book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Eagle-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Eagle-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Eagle-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'vr-icons';
+  src: url('../fonts/vr-icons.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/vr-icons.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/vr-icons.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/vr-icons.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/vr-icons.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/vr-icons.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+div {
+	transition: all .5s ease-in-out;
+}
+
 body.gray {
 	background:$smoke;
 }
@@ -33,15 +68,16 @@ body.gold {
 #footer {
 	flex:0 0 50px;
 	background:$secondary-color;
-	// padding:10px;
+	padding:10px;
 	display:flex;
 	justify-content:flex-start;
 	align-items:center;
 	font-size:12px;
+	width:100vw;
 }
 
 .button {
-	margin:0;
+	margin:0 2px;
 }
 
 #thumbnail {
@@ -170,7 +206,7 @@ body.gold {
     outline: rgb(0, 0, 0) none 0px;
 }/*#A_6*/
 
-#DIV_7 {
+.old-publisher {
     box-sizing: border-box;
     color: rgb(34, 34, 34);
     cursor: default;
@@ -186,7 +222,7 @@ body.gold {
     font: normal normal normal normal 12.8000001907349px/12.8000001907349px 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
     list-style: none outside none;
     outline: rgb(34, 34, 34) none 0px;
-}/*#DIV_7*/
+}/*#old-publisher*/
 
 #A_8 {
     box-sizing: border-box;
@@ -202,7 +238,7 @@ body.gold {
     transform-origin: 138.296875px 11.5px;
     background: rgb(41, 38, 36) none repeat scroll 0% 0% / auto padding-box border-box;
     border: 0px none rgb(255, 235, 62);
-    font: normal normal normal normal 13px/13px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 13px/13px 'EagleLight', sans-serif;
     list-style: none outside none;
     margin: 0px 2px 0px 0px;
     outline: rgb(255, 235, 62) none 0px;
@@ -219,7 +255,7 @@ body.gold {
     vertical-align: middle;
     white-space: nowrap;
     border: 0px none rgb(255, 235, 62);
-    font: normal normal normal normal 11px/20.7999992370605px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 11px/20.7999992370605px 'EagleLight', sans-serif;
     list-style: none outside none;
     margin: 0px 1px 0px 0px;
     outline: rgb(255, 235, 62) none 0px;
@@ -244,7 +280,7 @@ body.gold {
     text-align: left;
     white-space: nowrap;
     border: 0px none rgb(255, 235, 62);
-    font: normal normal normal normal 13px/13px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 13px/13px 'EagleLight', sans-serif;
     list-style: none outside none;
     outline: rgb(255, 235, 62) none 0px;
 }/*#SPAN_10, #SPAN_13*/
@@ -263,7 +299,7 @@ body.gold {
     transform-origin: 63.359375px 11.5px;
     background: rgb(41, 38, 36) none repeat scroll 0% 0% / auto padding-box border-box;
     border: 0px none rgb(255, 235, 62);
-    font: normal normal normal normal 13px/13px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 13px/13px 'EagleLight', sans-serif;
     list-style: none outside none;
     margin: 0px 2px 0px 0px;
     outline: rgb(255, 235, 62) none 0px;
@@ -280,7 +316,7 @@ body.gold {
     vertical-align: middle;
     white-space: nowrap;
     border: 0px none rgb(255, 235, 62);
-    font: normal normal normal normal 11px/20.7999992370605px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 11px/20.7999992370605px 'EagleLight', sans-serif;
     list-style: none outside none;
     margin: 0px 1px 0px 0px;
     outline: rgb(255, 235, 62) none 0px;
@@ -329,17 +365,17 @@ body.gold {
     outline: rgb(0, 0, 0) none 0px;
 }/*#A_15*/
 
-#DIV_16 {
+.old-date {
     box-sizing: border-box;
     color: rgb(255, 255, 255);
     display: inline-block;
     height: 19px;
     text-align: left;
-    width: 152.015625px;
+    // width: 152.015625px;
     perspective-origin: 76px 9.5px;
     transform-origin: 76px 9.5px;
     border: 0px none rgb(255, 255, 255);
-    font: normal normal normal normal 13px/13px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 13px/13px 'EagleLight', sans-serif;
     list-style: none outside none;
     outline: rgb(255, 255, 255) none 0px;
     padding: 2px 0px 4px;
@@ -379,7 +415,7 @@ body.gold {
     perspective-origin: 238.953125px 7px;
     transform-origin: 238.953125px 7px;
     border: 0px none rgb(255, 255, 255);
-    font: normal normal normal normal 13px/14.3000001907349px 'Eagle Light', sans-serif;
+    font: normal normal normal normal 13px/14.3000001907349px 'EagleLight', sans-serif;
     list-style: none outside none;
     outline: rgb(255, 255, 255) none 0px;
     overflow: hidden;
@@ -484,9 +520,6 @@ body.gold {
 	cursor:pointer;
 }
 
-.thumbnail-inside.no-padding {
-	padding:0;
-}
 
 .thumb-image-holder, .thumb-image {
 	width: 10vw;
@@ -504,12 +537,16 @@ body.gold {
 	margin:0;
 	background:url(../images/respawn.png) no-repeat 50% 50%;
 	background-size:cover;
+
+	flex:0;
+	-webkit-flex:0;
+}
+
+.thumb-image.filters {
 	-webkit-filter: sepia(1) hue-rotate(180deg) opacity(.4); 
 	// -webkit-filter: grayscale(.5);
 	filter:sepia(1) hue-rotate(180deg) opacity(.2);
 	// filter:hue-rotate(100);
-	flex:0;
-	-webkit-flex:0;
 }
 
 .thumb-overlay {
@@ -799,3 +836,77 @@ p.thumb-logline {
 	}
 }
 @media #{$xxlarge-only} { }
+
+
+//Special Overrides
+.thumbnail-inside.no-padding {
+	padding:0;
+}
+
+.thumb-image-holder.no-margin {
+	margin:0 12px 0 0;
+}
+
+.thumb-image-holder.no-margin, .thumb-image-holder.no-margin .thumb-image {
+	width:181px;
+	height:131px;
+	max-width:181px;
+	max-height:131px;
+	min-width:181px;
+	min-height:131px;
+	background-image:url(../images/respawnplay.png);
+}
+
+.thumb-image-holder.no-margin .thumb-overlay {
+	display:none;
+}
+
+
+
+.thumbnail.old-width {
+	flex:0 700px;
+	max-height:131px;
+	overflow:hidden;
+}
+
+.thumbnail.old-width .thumb-right {
+	margin:6px 12px 0 0;
+}
+
+.thumbnail-inside.oldbackground {
+	box-shadow:none;
+	background:#666059;
+}
+
+.thumb-title.old-style {
+    color: rgb(255, 235, 62);
+    text-align: left;
+    font: normal normal normal normal 19px/21.8500003814697px Eagle, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.thumb-logline.old-style{
+    color: rgb(255, 255, 255);
+    font: normal normal normal normal 13px/14.3000001907349px 'EagleLight', sans-serif;
+
+}
+
+.icon-play-octa, .icon-octa-full {
+    position: absolute;
+    top: 33px;
+    left: 65px;
+    font-size: 10rem;
+    color: white;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    text-shadow: 0 0 5px rgba(0,0,0,0.2);
+    opacity: 0.7;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+}
