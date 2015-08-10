@@ -1,4 +1,4 @@
-//@import 'iconfont';
+@import 'iconfont';
 
 html, body {
 	-webkit-font-smoothing: antialiased;
@@ -644,23 +644,29 @@ h1.thumb-title {
 	width:100%;
 }
 
-.thumb-listenlater, .thumb-duration {
-	height:42px;
-	display:flex; display:-webkit-flex;
-	justify-content:center;
-	align-items:center;
-	-webkit-justify-content:center;
-	-webkit-align-items:center;
-	margin-left: 6px;
-	background:$snow;
-	margin:0;
-	padding:0 12px;
-	transition:background .5s ease;
+.thumb-listenlater, .thumb-duration, .thumb-plays {
+    height:42px;
+    display:flex; display:-webkit-flex;
+    justify-content:center;
+    align-items:center;
+    -webkit-justify-content:center;
+    -webkit-align-items:center;
+    margin-left: 6px;
+    background:$snow;
+    margin:0;
+    padding:0 12px;
+    transition:background .5s ease;
+    transition:width .5s ease;
 }
 
-.thumb-duration {
-	margin-right:6px;
-	background:#fafafa;
+.thumb-listenlater.selected {
+    background:$primary-color;
+    color:$white;
+}
+
+.thumb-duration, .thumb-plays {
+    margin-right:6px;
+    background:#fafafa;
 }
 
 .thumb-listenlater:hover {
